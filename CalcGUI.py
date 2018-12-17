@@ -42,6 +42,7 @@ btn_equal = Button(text='=', background="#555", foreground="#ccc",
                    padx=10, pady=5, font=16)
 btn_plus = Button(text='+', background="#555", foreground="#ccc",
                   padx=10, pady=5, font=16)
+
 buttons = [btn_7, btn_8, btn_9, btn_div, btn_4, btn_5, btn_6, btn_mltp, btn_1,
            btn_2, btn_3, btn_minus, btn_0, btn_comma, btn_equal, btn_plus]
 
@@ -59,11 +60,11 @@ def draw_btn_grid(x0, y0, btn_dict):
     i = 0          # первый элемент ряда кнопок
     j = 4          # последний элемент ряда кнопок
     while True:
-        draw_btn_row(x0, y0, buttons[i:j])
+        draw_btn_row(x0, y0, btn_dict[i:j])
         y0 += 70
         i += 4
         j += 4
-        if j > len(buttons):
+        if j > len(btn_dict):
             break
 
 
