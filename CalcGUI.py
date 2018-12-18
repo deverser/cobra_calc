@@ -4,12 +4,6 @@ root = Tk()
 root.title("CobraCalc")
 root.geometry('400x500')
 
-
-def init_btn(textvar):
-    buttonText.config(text='{}'.format(textvar))
-    return buttonText
-
-
 btn_7 = Button(text='7', background="#555", foreground="#ccc",
                padx=10, pady=5, font=16)
 btn_8 = Button(text='8', background="#555", foreground="#ccc",
