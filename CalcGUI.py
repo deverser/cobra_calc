@@ -11,6 +11,8 @@ options.add_command(label="Settings")
 options.add_command(label="About")
 options.add_command(label="Exit")
 
+display = Label(bg='white', fg='black', font='arial 16', width=295, height=5)
+
 main_menu = Menu()
 main_menu.add_cascade(label="Options", menu=options)
 
@@ -40,6 +42,7 @@ def draw_btn_grid(x0, y0, btn_dict):
             break
 
 
+display.pack()
 draw_btn_grid(35, 250, buttons)
 root.config(menu=main_menu)
 root.mainloop()
