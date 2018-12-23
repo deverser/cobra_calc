@@ -4,7 +4,7 @@ from tkinter import *
 def init_button(text):
     """Создает объект кнопки"""
     btn = Button(text=text, background="#555", foreground="#ccc",
-                 padx=10, pady=5, font=16)
+                 padx=10, pady=5, font='arial 16')
     return btn
 
 

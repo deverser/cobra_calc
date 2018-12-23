@@ -4,6 +4,7 @@ import button as bt
 root = Tk()
 root.title("CobraCalc")
 root.geometry('300x500')
+root.resizable(False, False)
 
 options = Menu(tearoff=0)
 options.add_command(label="Settings")
