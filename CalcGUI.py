@@ -1,44 +1,12 @@
 ﻿from tkinter import *
+import button as bt
 
 root = Tk()
 root.title("CobraCalc")
 root.geometry('400x500')
 
-btn_7 = Button(text='7', background="#555", foreground="#ccc",
-               padx=10, pady=5, font=16)
-btn_8 = Button(text='8', background="#555", foreground="#ccc",
-               padx=10, pady=5, font=16)
-btn_9 = Button(text='9', background="#555", foreground="#ccc",
-               padx=10, pady=5, font=16)
-btn_4 = Button(text='4', background="#555", foreground="#ccc",
-               padx=10, pady=5, font=16)
-btn_5 = Button(text='5', background="#555", foreground="#ccc",
-               padx=10, pady=5, font=16)
-btn_6 = Button(text='6', background="#555", foreground="#ccc",
-               padx=10, pady=5, font=16)
-btn_1 = Button(text='1', background="#555", foreground="#ccc",
-               padx=10, pady=5, font=16)
-btn_2 = Button(text='2', background="#555", foreground="#ccc",
-               padx=10, pady=5, font=16)
-btn_3 = Button(text='3', background="#555", foreground="#ccc",
-               padx=10, pady=5, font=16)
-btn_0 = Button(text='0', background="#555", foreground="#ccc",
-               padx=10, pady=5, font=16)
-btn_comma = Button(text=',', background="#555", foreground="#ccc",
-                   padx=10, pady=5, font=16)
-btn_div = Button(text='/', background="#555", foreground="#ccc",
-                 padx=10, pady=5, font=16)
-btn_mltp = Button(text='*', background="#555", foreground="#ccc",
-                  padx=10, pady=5, font=16)
-btn_minus = Button(text='-', background="#555", foreground="#ccc",
-                   padx=10, pady=5, font=16)
-btn_equal = Button(text='=', background="#555", foreground="#ccc",
-                   padx=10, pady=5, font=16)
-btn_plus = Button(text='+', background="#555", foreground="#ccc",
-                  padx=10, pady=5, font=16)
-
-buttons = [btn_7, btn_8, btn_9, btn_div, btn_4, btn_5, btn_6, btn_mltp, btn_1,
-           btn_2, btn_3, btn_minus, btn_0, btn_comma, btn_equal, btn_plus]
+btn_names = ['7', '8', '9', '/', '4', '5', '6', '*', '1', '2', '3', '-', '0', ',', '=', '+']
+buttons = bt.btn_tk_img(btn_names)
 
 
 def draw_btn_row(x0, y0, btn_dict):
