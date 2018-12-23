@@ -3,7 +3,16 @@ import button as bt
 
 root = Tk()
 root.title("CobraCalc")
-root.geometry('400x500')
+root.geometry('300x500')
+
+options = Menu(tearoff=0)
+options.add_command(label="Settings")
+options.add_command(label="About")
+options.add_command(label="Exit")
+
+main_menu = Menu()
+main_menu.add_cascade(label="Options", menu=options)
+
 
 btn_names = ['7', '8', '9', '/', '4', '5', '6', '*', '1', '2', '3', '-', '0', ',', '=', '+']
 buttons = bt.btn_tk_img(btn_names)
@@ -31,4 +40,5 @@ def draw_btn_grid(x0, y0, btn_dict):
 
 
 draw_btn_grid(35, 250, buttons)
+root.config(menu=main_menu)
 root.mainloop()
