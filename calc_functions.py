@@ -1,6 +1,15 @@
 import math
 
 
+# def check_num():
+#     num = entry.get()
+#     if num.isdigit() == False:
+#         mb.showerror("Error", "Должно быть введено число")
+#     else:
+#         entry.delete(0, END)
+#         label['text'] = num
+
+
 def addition(a, b):
     """Сложение"""
     return a + b

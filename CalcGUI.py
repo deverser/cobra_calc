@@ -42,7 +42,13 @@ def draw_btn_grid(x0, y0, btn_dict):
             break
 
 
+def exit_win(event):
+    root.destroy()
+
+
 display.pack()
 draw_btn_grid(35, 250, buttons)
 root.config(menu=main_menu)
+root.bind('q', exit_win)
+
 root.mainloop()
