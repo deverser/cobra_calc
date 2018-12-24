@@ -11,7 +11,7 @@ options.add_command(label="Settings")
 options.add_command(label="About")
 options.add_command(label="Exit")
 
-display = Label(text = '', bg='white', fg='black', font='arial 16', width=295, height=5)
+display = Label(text='', bg='white', fg='black', font='arial 16', width=295, height=5)
 
 
 btn_7 = bt.init_button('7')
@@ -60,7 +60,8 @@ def draw_btn_grid(x0, y0, btn_dict):
 
 
 def show_nums(event):
-    display['text'] = button['text']
+    event['text'] = '7'
+
 
 btn_7.bind('7', show_nums)
 
