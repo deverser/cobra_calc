@@ -13,12 +13,29 @@ options.add_command(label="Exit")
 
 display = Label(bg='white', fg='black', font='arial 16', width=295, height=5)
 
+
+btn_7 = bt.init_button('7')
+btn_8 = bt.init_button('8')
+btn_9 = bt.init_button('9')
+btn_4 = bt.init_button('4')
+btn_5 = bt.init_button('5')
+btn_6 = bt.init_button('6')
+btn_1 = bt.init_button('1')
+btn_2 = bt.init_button('2')
+btn_3 = bt.init_button('3')
+btn_0 = bt.init_button('0')
+btn_comma = bt.init_button(',')
+btn_div = bt.init_button('/')
+btn_mltp = bt.init_button('*')
+btn_minus = bt.init_button('-')
+btn_equal = bt.init_button('=')
+btn_plus = bt.init_button('+')
+
+buttons = [btn_7, btn_8, btn_9, btn_div, btn_4, btn_5, btn_6, btn_mltp, btn_1, btn_2,
+           btn_3, btn_minus, btn_comma, btn_0, btn_equal, btn_plus]
+
 main_menu = Menu()
 main_menu.add_cascade(label="Options", menu=options)
-
-
-btn_names = ['7', '8', '9', '/', '4', '5', '6', '*', '1', '2', '3', '-', '0', ',', '=', '+']
-buttons = bt.btn_tk_img(btn_names)
 
 
 def draw_btn_row(x0, y0, btn_dict):
