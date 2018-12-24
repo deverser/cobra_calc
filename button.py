@@ -17,6 +17,9 @@ def btn_tk_img(texts):
     return buttons
 
 
+
+
+
 if __name__ == '__main__':
     texts = ['7', '8', '9', '/', '4', '5', '6', '*', '1', '2', '3', '-', '0', ',', '=', '+']
     print(btn_tk_img(texts))
